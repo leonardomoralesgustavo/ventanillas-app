@@ -1,7 +1,11 @@
 import { createTheme } from "@mui/material";
 
 const theme = createTheme({
-  palette: {},
+  palette: {
+    primary: {
+      main: "#155F95",
+    },
+  },
   typography: {
     fontFamily: "Poppins",
   },
@@ -22,6 +26,34 @@ const theme = createTheme({
           borderRadius: "0px",
         },
       },
+      variants: [
+        {
+          props: { variant: "contained", color: "primary" },
+        //   style: {
+        //     background:
+        //       "#155F95",
+        //     color: "white",
+        //     ":hover": {
+        //       opacity: 1,
+        //     },
+        //   },
+          style: (currentStyles) => ({
+            fontSize: "16px",
+            color: "white",
+            textTransform: "none",
+            bgColor: "primary",
+            ":hover": {
+                
+            },
+            [currentStyles.theme.breakpoints.between("lg", "xl")]: {
+              fontSize: "15px",
+            },
+            [currentStyles.theme.breakpoints.between("md", "lg")]: {
+              fontSize: "14px",
+            },
+          }),
+        },
+      ],
     },
     MuiTypography: {
       variants: [

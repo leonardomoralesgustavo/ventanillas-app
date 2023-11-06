@@ -1,10 +1,10 @@
-import CreateUserForm from '@/components/sections/user/forms/CreateUserForm/CreateUserForm'
-import React from 'react'
+import { CreateUserForm } from "@/components/sections/user/forms";
+import React from "react";
 
 const register = () => {
   return (
-    <CreateUserForm/>
+  <CreateUserForm />
   )
 }
 
-export default register
+export default register;

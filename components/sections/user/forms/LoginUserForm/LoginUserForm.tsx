@@ -1,7 +1,22 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
-import React from "react";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export const LoginUserForm = () => {
+  const router = useRouter();
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = () => {
+    alert(`Nombre: ${name}\nContraseña: ${password}`);
+    router.push("/");
+    const userData = {
+      name,
+      password,
+    };
+    console.log("Datos de usuario:", userData);
+  };
+
   return (
     <Box display={"flex"} justifyContent={"left"} sx={{ width: "100%" }}>
       <Box display={"flex"} flexDirection={"column"} sx={{ m: 8 }}>
@@ -18,26 +33,26 @@ export const LoginUserForm = () => {
                 color: "white",
               },
             }}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
           <TextField
-            placeholder="Domicilio"
+            placeholder="Contraseña"
             sx={{ width: "65%" }}
             InputProps={{
               style: {
                 color: "white",
               },
             }}
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
-          <TextField
-            placeholder="Conrtraseña"
-            sx={{ width: "65%" }}
-            InputProps={{
-              style: {
-                color: "white",
-              },
-            }}
-          />
-          <Button variant="contained" sx={{ width: "40%" }}>
+          <Button
+            variant="contained"
+            sx={{ width: "40%" }}
+            onClick={handleLogin}
+          >
             Iniciar sesión
           </Button>
         </Box>

@@ -9,6 +9,7 @@ import {
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { blue } from "@mui/material/colors";
+import { theme } from "@/theme";
 
 const DataPage = () => {
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ const DataPage = () => {
           display: "flex",
           flexDirection: "column",
           // width: "100vw",
-          //   height: "100vh",
+          height: "90vh",
           gap: 8,
         }}
       >
@@ -52,6 +53,7 @@ const DataPage = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
+            mt: 4,
           }}
         >
           <Typography
@@ -82,6 +84,7 @@ const DataPage = () => {
             height: "80%",
             display: "flex",
             flexDirection: "column",
+            p: 4,
           }}
         >
           <FormControl sx={{ gap: 8, ml: 12 }}>
@@ -360,14 +363,29 @@ const DataPage = () => {
               {/* </Box> */}
             </Box>
           </FormControl>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={handleSaveClick}
-            sx={{ mt: 10, width: "30%" }}
+          <Box
+            display={"flex"}
+            sx={{
+              // margin: "0 0 0 -10px",
+              borderRadius: "5px",
+              bgcolor: theme.palette.primary.main,
+              opacity: 0.99,
+              ml: 11,
+              mt: 4,
+            }}
+            bgcolor={"purple"}
+            width={"15%"}
+            // height={"50px"}
           >
-            Guardar
-          </Button>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={handleSaveClick}
+              sx={{ width: "100%" }}
+            >
+              Guardar
+            </Button>
+          </Box>
         </Box>
       </Box>
     </>

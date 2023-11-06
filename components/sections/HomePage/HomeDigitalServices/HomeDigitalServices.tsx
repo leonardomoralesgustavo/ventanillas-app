@@ -1,5 +1,6 @@
 import { theme } from "@/theme";
 import { Box, Button, Typography } from "@mui/material";
+import { useRouter } from "next/router";
 import React from "react";
 
 interface IDataCard {
@@ -32,6 +33,7 @@ const cards: IDataCard[] = [
 ];
 
 export const HomeDigitalServices = () => {
+  const router = useRouter();
   return (
     <Box
       display={"flex"}
@@ -76,6 +78,7 @@ export const HomeDigitalServices = () => {
                   height: "55px",
                   borderRadius: "5px",
                 }}
+                onClick={() => router.push("/captureData")}
               >
                 {text}
               </Button>

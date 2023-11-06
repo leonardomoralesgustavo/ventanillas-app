@@ -1,10 +1,11 @@
-import { Box, Typography } from '@mui/material'
-import React from 'react'
+import { Box, Typography } from "@mui/material";
+import React from "react";
+import { HomeDigitalServices } from "./HomeDigitalServices";
 
 export const HomePageContent = () => {
   return (
     <Box>
-        <Typography>Hello!</Typography>
+      <HomeDigitalServices />
     </Box>
-  )
-}
+  );
+};

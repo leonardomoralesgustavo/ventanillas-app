@@ -242,7 +242,7 @@ const DataPage = () => {
                     textAlign={"left"}
                     fontSize={16}
                   >
-                    Cantidad{" "}
+                    No. de pedimineto{" "}
                   </Typography>
                   <Box>
                     <TextField

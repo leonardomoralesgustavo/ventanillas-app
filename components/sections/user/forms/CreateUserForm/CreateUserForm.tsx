@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box, Button, TextField } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { useRouter } from "next/router";
+import { theme } from "@/theme";
 
 export const CreateUserForm = () => {
   const router = useRouter();
@@ -45,6 +46,7 @@ export const CreateUserForm = () => {
               InputProps={{
                 style: {
                   color: "white",
+                  backgroundColor: "#5DCDFF",
                 },
               }}
             />
@@ -56,6 +58,7 @@ export const CreateUserForm = () => {
               InputProps={{
                 style: {
                   color: "white",
+                  backgroundColor: "#5DCDFF",
                 },
               }}
             />
@@ -69,6 +72,7 @@ export const CreateUserForm = () => {
                 InputProps={{
                   style: {
                     color: "white",
+                    backgroundColor: "#5DCDFF",
                   },
                 }}
               />
@@ -81,6 +85,7 @@ export const CreateUserForm = () => {
                 InputProps={{
                   style: {
                     color: "white",
+                    backgroundColor: "#5DCDFF",
                   },
                 }}
               />
@@ -94,12 +99,25 @@ export const CreateUserForm = () => {
               InputProps={{
                 style: {
                   color: "white",
+                  backgroundColor: "#5DCDFF",
                 },
               }}
             />
-            <Button type="submit" variant="contained" sx={{ width: "30%" }}>
-              Crear cuenta
-            </Button>
+            <Box
+              display={"flex"}
+              sx={{
+                // borderRadius: "5px",
+                bgcolor: theme.palette.primary.main,
+                opacity: 0.99,
+                mt: 2,
+              }}
+              bgcolor={"purple"}
+              width={"40%"}
+            >
+              <Button type="submit" variant="contained" sx={{ width: "100%" }}>
+                Crear cuenta
+              </Button>
+            </Box>
           </Box>
         </Box>
       </Box>

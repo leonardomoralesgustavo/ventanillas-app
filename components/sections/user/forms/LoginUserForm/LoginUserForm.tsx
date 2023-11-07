@@ -1,3 +1,4 @@
+import { theme } from "@/theme";
 import { Box, Button, TextField, Typography } from "@mui/material";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -9,7 +10,7 @@ export const LoginUserForm = () => {
 
   const handleLogin = () => {
     alert(`Nombre: ${name}\nContraseña: ${password}`);
-    router.push("/");
+    router.push("/filesUpload");
     const userData = {
       name,
       password,
@@ -31,6 +32,7 @@ export const LoginUserForm = () => {
             InputProps={{
               style: {
                 color: "white",
+                backgroundColor: "#5DCDFF",
               },
             }}
             value={name}
@@ -42,19 +44,32 @@ export const LoginUserForm = () => {
             InputProps={{
               style: {
                 color: "white",
+                backgroundColor: "#5DCDFF",
               },
             }}
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button
-            variant="contained"
-            sx={{ width: "40%" }}
-            onClick={handleLogin}
+          <Box
+            display={"flex"}
+            sx={{
+              // borderRadius: "5px",
+              bgcolor: theme.palette.primary.main,
+              opacity: 0.99,
+              mt: 2,
+            }}
+            bgcolor={"purple"}
+            width={"40%"}
           >
-            Iniciar sesión
-          </Button>
+            <Button
+              variant="contained"
+              sx={{ width: "100%" }}
+              onClick={handleLogin}
+            >
+              Iniciar sesión
+            </Button>
+          </Box>
         </Box>
       </Box>
     </Box>

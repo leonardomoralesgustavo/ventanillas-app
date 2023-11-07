@@ -1,8 +1,10 @@
 import { theme } from "@/theme";
 import { Box, Button, Divider, TextField, Typography } from "@mui/material";
+import { useRouter } from "next/router";
 import React from "react";
 
 const filesUpload = () => {
+  const router = useRouter();
   const handleFileInputChange = (event: any) => {
     const selectedFile = event.target.files[0];
     console.log(selectedFile);
@@ -31,6 +33,7 @@ const filesUpload = () => {
                   InputProps={{
                     style: {
                       color: "white",
+                      backgroundColor: "#5DCDFF",
                     },
                   }}
                 />
@@ -100,6 +103,7 @@ const filesUpload = () => {
                   InputProps={{
                     style: {
                       color: "white",
+                      backgroundColor: "#5DCDFF",
                     },
                   }}
                 />
@@ -169,6 +173,7 @@ const filesUpload = () => {
                   InputProps={{
                     style: {
                       color: "white",
+                      backgroundColor: "#5DCDFF",
                     },
                   }}
                 />
@@ -238,6 +243,7 @@ const filesUpload = () => {
                   InputProps={{
                     style: {
                       color: "white",
+                      backgroundColor: "#5DCDFF",
                     },
                   }}
                 />
@@ -309,6 +315,7 @@ const filesUpload = () => {
                   InputProps={{
                     style: {
                       color: "white",
+                      backgroundColor: "#5DCDFF",
                     },
                   }}
                 />
@@ -378,6 +385,7 @@ const filesUpload = () => {
                   InputProps={{
                     style: {
                       color: "white",
+                      backgroundColor: "#5DCDFF",
                     },
                   }}
                 />
@@ -447,6 +455,7 @@ const filesUpload = () => {
                   InputProps={{
                     style: {
                       color: "white",
+                      backgroundColor: "#5DCDFF",
                     },
                   }}
                 />
@@ -516,6 +525,7 @@ const filesUpload = () => {
                   InputProps={{
                     style: {
                       color: "white",
+                      backgroundColor: "#5DCDFF",
                     },
                   }}
                 />
@@ -593,8 +603,9 @@ const filesUpload = () => {
               height: "55px",
               borderRadius: "5px",
             }}
+            onClick={() => router.push("/digitalServices")}
           >
-            Seleccionar archivo
+            Siguiente
           </Button>
         </Box>
       </Box>

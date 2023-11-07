@@ -3,6 +3,7 @@ import {
   Button,
   Divider,
   FormControl,
+  Modal,
   TextField,
   Typography,
 } from "@mui/material";
@@ -10,8 +11,11 @@ import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { blue } from "@mui/material/colors";
 import { theme } from "@/theme";
+import { useRouter } from "next/router";
 
 const DataPage = () => {
+  const router = useRouter();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
     claveProducto: "",
     importe: "",
@@ -31,6 +35,8 @@ const DataPage = () => {
 
     // Muestra los datos en un alert
     alert("Datos guardados: " + JSON.stringify(formData));
+    // Open the modal after showing the alert
+    setIsModalOpen(true);
   };
 
   const handleInputChange = (field: any, value: any) => {
@@ -231,13 +237,12 @@ const DataPage = () => {
                       }
                     />
                   </Box>
-
                   <Typography
                     color={"#111827"}
                     textAlign={"left"}
                     fontSize={16}
                   >
-                    No. de pedimiento{" "}
+                    Cantidad{" "}
                   </Typography>
                   <Box>
                     <TextField
@@ -248,7 +253,7 @@ const DataPage = () => {
                       }}
                       value={formData.noPedimento}
                       onChange={(e) =>
-                        handleInputChange("noPedimiento", e.target.value)
+                        handleInputChange("noPedimento", e.target.value)
                       }
                     />
                   </Box>
@@ -366,7 +371,6 @@ const DataPage = () => {
           <Box
             display={"flex"}
             sx={{
-              // margin: "0 0 0 -10px",
               borderRadius: "5px",
               bgcolor: theme.palette.primary.main,
               opacity: 0.99,
@@ -375,7 +379,6 @@ const DataPage = () => {
             }}
             bgcolor={"purple"}
             width={"15%"}
-            // height={"50px"}
           >
             <Button
               variant="contained"
@@ -388,8 +391,64 @@ const DataPage = () => {
           </Box>
         </Box>
       </Box>
+      <Modal
+        open={isModalOpen}
+        // onClose={""}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography
+            color={"black"}
+            id="modal-modal-title"
+            variant="h6"
+            component="h2"
+          >
+            ¡Listo!
+          </Typography>
+          <Typography
+            color={"black"}
+            id="modal-modal-description"
+            sx={{ mt: 2 }}
+          >
+            Se hizo tu pago correctamente
+          </Typography>
+          <Box
+            display={"flex"}
+            sx={{
+              // borderRadius: "5px",
+              bgcolor: theme.palette.primary.main,
+              opacity: 0.99,
+              mt: 2,
+            }}
+            bgcolor={"purple"}
+            width={"40%"}
+          >
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{ width: "100%" }}
+              onClick={() => router.push("/digitalServices")}
+            >
+              Aceptar
+            </Button>
+          </Box>
+        </Box>
+      </Modal>
     </>
   );
 };
 
 export default DataPage;
+
+const style = {
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};

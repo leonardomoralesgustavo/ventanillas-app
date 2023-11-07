@@ -1,9 +1,8 @@
-import React from 'react'
+import { HomeDigitalServices } from "@/components/sections/HomePage/HomeDigitalServices";
+import React from "react";
 
 const digitalServices = () => {
-  return (
-    <div>digitalServices</div>
-  )
-}
+  return <HomeDigitalServices />;
+};
 
-export default digitalServices
+export default digitalServices;

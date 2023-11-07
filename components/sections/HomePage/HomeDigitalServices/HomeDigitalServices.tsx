@@ -21,7 +21,7 @@ const cards: IDataCard[] = [
     text: "Pagar servicio",
   },
   {
-    img: "/images/car.png",
+    img: "/images/profile.png",
     title: "Licencias de Funcionamiento",
     text: "Pagar servicio",
   },

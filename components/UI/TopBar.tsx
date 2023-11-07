@@ -30,6 +30,10 @@ const pages: IPages[] = [
     title: "Inicio",
     route: "/",
   },
+  {
+    title: "Servicios",
+    route: "/digitalServices"
+  }
 ];
 
 export const TopBar = () => {

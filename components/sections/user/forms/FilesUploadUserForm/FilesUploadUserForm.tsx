@@ -18,13 +18,23 @@ export const FilesUpload = () => {
           Ingresa los siguientes datos para poder pagar tus cuentas
         </Typography>
         <Divider sx={{ bgcolor: "white", width: "55%" }} />
-        <Box display={"flex"} gap={10}>
-          <Box display={"flex"} flexDirection={"column"} gap={4}>
+        <Box
+          display={"flex"}
+          justifyContent={{ xs: "center", sm: "center", md: "left" }}
+          sx={{ flexWrap: "wrap" }}
+          gap={10}
+        >
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            gap={4}
+            mr={{ xs: "none", sm: "none", md: 20 }}
+          >
             <Box>
               <Typography>INE</Typography>
               <Box
                 display={"flex"}
-                justifyContent={"center"}
+                justifyContent={"left"}
                 alignItems={"center"}
                 bgcolor={" "}
               >
@@ -37,7 +47,7 @@ export const FilesUpload = () => {
                     },
                   }}
                 />
-                <label style={{ width: "500px" }}>
+                <label style={{ width: "auto" }}>
                   <input
                     type="file"
                     style={{ display: "none" }}
@@ -51,16 +61,17 @@ export const FilesUpload = () => {
                       bgcolor: theme.palette.primary.main,
                       opacity: 0.99,
                     }}
-                    width={"50%"}
+                    width={"120%"}
                   >
                     <Button
                       variant="contained"
                       sx={{
+                        textAlign: "center",
                         width: "100%",
                         height: "55px",
                         borderRadius: "12px",
                       }}
-                      component="span" // Esto hace que el botón abra el selector de archivos
+                      component="span"
                     >
                       Seleccionar archivo
                     </Button>
@@ -85,7 +96,7 @@ export const FilesUpload = () => {
                     },
                   }}
                 />
-                <label style={{ width: "500px" }}>
+                <label style={{ width: "auto" }}>
                   <input
                     type="file"
                     style={{ display: "none" }}
@@ -99,7 +110,7 @@ export const FilesUpload = () => {
                       bgcolor: theme.palette.primary.main,
                       opacity: 0.99,
                     }}
-                    width={"50%"}
+                    width={"120%"}
                   >
                     <Button
                       variant="contained"
@@ -108,7 +119,7 @@ export const FilesUpload = () => {
                         height: "55px",
                         borderRadius: "12px",
                       }}
-                      component="span" // Esto hace que el botón abra el selector de archivos
+                      component="span"
                     >
                       Seleccionar archivo
                     </Button>
@@ -133,7 +144,7 @@ export const FilesUpload = () => {
                     },
                   }}
                 />
-                <label style={{ width: "500px" }}>
+                <label style={{ width: "auto" }}>
                   <input
                     type="file"
                     style={{ display: "none" }}
@@ -147,7 +158,7 @@ export const FilesUpload = () => {
                       bgcolor: theme.palette.primary.main,
                       opacity: 0.99,
                     }}
-                    width={"50%"}
+                    width={"120%"}
                   >
                     <Button
                       variant="contained"
@@ -156,7 +167,7 @@ export const FilesUpload = () => {
                         height: "55px",
                         borderRadius: "12px",
                       }}
-                      component="span" // Esto hace que el botón abra el selector de archivos
+                      component="span"
                     >
                       Seleccionar archivo
                     </Button>
@@ -181,7 +192,7 @@ export const FilesUpload = () => {
                     },
                   }}
                 />
-                <label style={{ width: "500px" }}>
+                <label style={{ width: "auto" }}>
                   <input
                     type="file"
                     style={{ display: "none" }}
@@ -195,7 +206,7 @@ export const FilesUpload = () => {
                       bgcolor: theme.palette.primary.main,
                       opacity: 0.99,
                     }}
-                    width={"50%"}
+                    width={"120%"}
                   >
                     <Button
                       variant="contained"
@@ -204,7 +215,7 @@ export const FilesUpload = () => {
                         height: "55px",
                         borderRadius: "12px",
                       }}
-                      component="span" // Esto hace que el botón abra el selector de archivos
+                      component="span"
                     >
                       Seleccionar archivo
                     </Button>
@@ -231,7 +242,7 @@ export const FilesUpload = () => {
                     },
                   }}
                 />
-                <label style={{ width: "500px" }}>
+                <label style={{ width: "auto" }}>
                   <input
                     type="file"
                     style={{ display: "none" }}
@@ -245,7 +256,7 @@ export const FilesUpload = () => {
                       bgcolor: theme.palette.primary.main,
                       opacity: 0.99,
                     }}
-                    width={"50%"}
+                    width={"120%"}
                   >
                     <Button
                       variant="contained"
@@ -254,7 +265,7 @@ export const FilesUpload = () => {
                         height: "55px",
                         borderRadius: "12px",
                       }}
-                      component="span" // Esto hace que el botón abra el selector de archivos
+                      component="span"
                     >
                       Seleccionar archivo
                     </Button>
@@ -279,7 +290,7 @@ export const FilesUpload = () => {
                     },
                   }}
                 />
-                <label style={{ width: "500px" }}>
+                <label style={{ width: "auto" }}>
                   <input
                     type="file"
                     style={{ display: "none" }}
@@ -293,7 +304,7 @@ export const FilesUpload = () => {
                       bgcolor: theme.palette.primary.main,
                       opacity: 0.99,
                     }}
-                    width={"50%"}
+                    width={"120%"}
                   >
                     <Button
                       variant="contained"
@@ -302,7 +313,7 @@ export const FilesUpload = () => {
                         height: "55px",
                         borderRadius: "12px",
                       }}
-                      component="span" // Esto hace que el botón abra el selector de archivos
+                      component="span"
                     >
                       Seleccionar archivo
                     </Button>
@@ -327,7 +338,7 @@ export const FilesUpload = () => {
                     },
                   }}
                 />
-                <label style={{ width: "500px" }}>
+                <label style={{ width: "auto" }}>
                   <input
                     type="file"
                     style={{ display: "none" }}
@@ -341,7 +352,7 @@ export const FilesUpload = () => {
                       bgcolor: theme.palette.primary.main,
                       opacity: 0.99,
                     }}
-                    width={"50%"}
+                    width={"120%"}
                   >
                     <Button
                       variant="contained"
@@ -350,7 +361,7 @@ export const FilesUpload = () => {
                         height: "55px",
                         borderRadius: "12px",
                       }}
-                      component="span" // Esto hace que el botón abra el selector de archivos
+                      component="span"
                     >
                       Seleccionar archivo
                     </Button>
@@ -375,7 +386,7 @@ export const FilesUpload = () => {
                     },
                   }}
                 />
-                <label style={{ width: "500px" }}>
+                <label style={{ width: "auto" }}>
                   <input
                     type="file"
                     style={{ display: "none" }}
@@ -389,7 +400,7 @@ export const FilesUpload = () => {
                       bgcolor: theme.palette.primary.main,
                       opacity: 0.99,
                     }}
-                    width={"50%"}
+                    width={"120%"}
                   >
                     <Button
                       variant="contained"
@@ -398,7 +409,7 @@ export const FilesUpload = () => {
                         height: "55px",
                         borderRadius: "12px",
                       }}
-                      component="span" // Esto hace que el botón abra el selector de archivos
+                      component="span"
                     >
                       Seleccionar archivo
                     </Button>
@@ -418,7 +429,7 @@ export const FilesUpload = () => {
             ml: "0.5px",
           }}
           bgcolor={"purple"}
-          width={"20%"}
+          width={"40%"}
         >
           <Button
             variant="contained"

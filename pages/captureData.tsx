@@ -51,7 +51,7 @@ const DataPage = () => {
           display: "flex",
           flexDirection: "column",
           // width: "100vw",
-          height: "90vh",
+          // height: "90vh",
           gap: 8,
         }}
       >
@@ -93,14 +93,15 @@ const DataPage = () => {
             p: 4,
           }}
         >
-          <FormControl sx={{ gap: 8, ml: 12 }}>
+          <FormControl sx={{ gap: 8, ml: { xs: 0, lg: 12 } }}>
             <Box display={"display"} flexDirection={"column"} width={"100%"}>
               <Box
                 display={"flex"}
-                flexDirection={"row"}
+                flexDirection={{ xs: "column", md: "column", lg: "row" }}
                 width={"100%"}
                 gap={3}
               >
+                {/* primeros cuatro */}
                 <Box
                   display={"flex"}
                   flexDirection={"column"}
@@ -155,7 +156,6 @@ const DataPage = () => {
                     />
                   </Box>
                 </Box>
-
                 <Box
                   display={"flex"}
                   flexDirection={"column"}
@@ -210,7 +210,8 @@ const DataPage = () => {
                     />
                   </Box>
                 </Box>
-
+                {/* primeros cuatro */}
+                {/* sigueintes cinco */}
                 <Box
                   display={"flex"}
                   flexDirection={"column"}
@@ -258,7 +259,6 @@ const DataPage = () => {
                     />
                   </Box>
                 </Box>
-
                 <Box
                   display={"flex"}
                   flexDirection={"column"}
@@ -307,7 +307,6 @@ const DataPage = () => {
                     />
                   </Box>
                 </Box>
-
                 <Box
                   display={"flex"}
                   flexDirection={"column"}
@@ -335,6 +334,7 @@ const DataPage = () => {
                     />
                   </Box>
                 </Box>
+                {/* sigueintes cinco */}
               </Box>
             </Box>
 

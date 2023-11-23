@@ -37,10 +37,13 @@ export const HomeDigitalServices = () => {
   return (
     <Box
       display={"flex"}
+      flexDirection={{ xs: "column", sm: "column", md: "row" }}
       justifyContent={"center"}
       alignItems={"center"}
-      gap={4}
-      mt={30}
+      sx={{ flexWrap: "wrap" }}
+      // gap={4}
+
+      // mt={30}
     >
       {cards.map(({ img, title, text }) => (
         <>

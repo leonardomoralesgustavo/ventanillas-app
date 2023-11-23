@@ -28,9 +28,11 @@ export const MainLayout: FC<PropsWithChildren<Props>> = ({
         </Box>
       </Box> */}
       <Box
-        style={{
-          backgroundImage: "url(/images/Grupo78.png)",
-          width: "100vw",
+        sx={{
+          // backgroundImage: { xs: "none", md: "url(/images/Grupo78.png)" },
+          bgcolor: { xs: "#37ADF7", lg: "none" },
+          // width: { xs: "none", md: "100vw" },
+          // height: { xs: "none", md: "100vh" },
           height: "100vh",
         }}
         component={"main"}

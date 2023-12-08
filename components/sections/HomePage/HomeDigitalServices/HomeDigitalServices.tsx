@@ -77,7 +77,7 @@ const cards: IDataCard[] = [
   },
   {
     img: "/images/juegomecanico.png",
-    title: "Juego mecánicos",
+    title: "Juegos mecánicos",
     text: "Pagar servicio",
   },
   {

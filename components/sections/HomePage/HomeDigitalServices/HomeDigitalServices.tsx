@@ -38,7 +38,7 @@ const cards: IDataCard[] = [
   {
     img: "/images/permiso.png",
     title: "Permisos",
-    text: "Conferencias",
+    text: "Pagar servicio",
   },
   {
     img: "/images/boxlucha.png",
@@ -58,7 +58,7 @@ const cards: IDataCard[] = [
   {
     img: "/images/desfile.png",
     title: "Desfiles",
-    text: "Conferencias",
+    text: "Pagar servicio",
   },
   {
     img: "/images/fiesta.png",
@@ -78,7 +78,7 @@ const cards: IDataCard[] = [
   {
     img: "/images/juegomecanico.png",
     title: "Juego mecánicos",
-    text: "Conferencias",
+    text: "Pagar servicio",
   },
   {
     img: "/images/concierto.png",

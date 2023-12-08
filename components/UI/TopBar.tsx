@@ -32,8 +32,8 @@ const pages: IPages[] = [
   },
   {
     title: "Servicios",
-    route: "/digitalServices"
-  }
+    route: "/digitalServices",
+  },
 ];
 
 export const TopBar = () => {
@@ -69,7 +69,7 @@ export const TopBar = () => {
         <Box
           component={"img"}
           src="./images/logo.png"
-          width={"10%"}
+          width={"auto"}
           height={"60px"}
           sx={{
             display: { xs: "none", md: "flex" },
@@ -80,7 +80,7 @@ export const TopBar = () => {
           onClick={() => router.push("/")}
         />
         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-          <IconButton
+          {/* <IconButton
             size="large"
             aria-label="account of current user"
             aria-controls="menu-appbar"
@@ -89,7 +89,20 @@ export const TopBar = () => {
             color="inherit"
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
+          <Box
+            component={"img"}
+            src="./images/logo.png"
+            width={"auto"}
+            height={"40px"}
+            sx={{
+              display: { xs: "flex", md: "none" },
+              my: 3,
+              mr: 1,
+              cursor: "pointer",
+            }}
+            onClick={() => router.push("/")}
+          />
           <Menu
             id="menu-appbar"
             anchorEl={anchorElNav}

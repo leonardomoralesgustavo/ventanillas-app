@@ -28,7 +28,7 @@ export const LoginUserForm = () => {
         <Box display={"flex"} flexDirection={"column"} mt={4} gap={4}>
           <TextField
             placeholder="Nombre"
-            sx={{ width: "65%" }}
+            sx={{ width: { xs: "100%", sm: "100%", md: "75%" } }}
             InputProps={{
               style: {
                 color: "white",
@@ -40,7 +40,7 @@ export const LoginUserForm = () => {
           />
           <TextField
             placeholder="Contraseña"
-            sx={{ width: "65%" }}
+            sx={{ width: { xs: "100%", sm: "100%", md: "75%" } }}
             InputProps={{
               style: {
                 color: "white",
@@ -55,12 +55,13 @@ export const LoginUserForm = () => {
             display={"flex"}
             sx={{
               // borderRadius: "5px",
+              width: { xs: "100%", sm: "100%", md: "45%" },
               bgcolor: theme.palette.primary.main,
               opacity: 0.99,
               mt: 2,
             }}
             bgcolor={"purple"}
-            width={"40%"}
+            // width={"40%"}
           >
             <Button
               variant="contained"

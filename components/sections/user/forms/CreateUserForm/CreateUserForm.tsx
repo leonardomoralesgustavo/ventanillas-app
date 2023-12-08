@@ -68,7 +68,7 @@ export const CreateUserForm = () => {
                 placeholder="Teléfono"
                 value={formData.telefono}
                 onChange={handleChange}
-                sx={{ width: "40%" }}
+                sx={{ width: { xs: "50%", sm: "50%", md: "40%" } }}
                 InputProps={{
                   style: {
                     color: "white",
@@ -81,7 +81,7 @@ export const CreateUserForm = () => {
                 placeholder="Correo"
                 value={formData.correo}
                 onChange={handleChange}
-                sx={{ width: "60%" }}
+                sx={{ width: { xs: "50%", sm: "50%", md: "60%" } }}
                 InputProps={{
                   style: {
                     color: "white",
@@ -112,7 +112,7 @@ export const CreateUserForm = () => {
                 mt: 2,
               }}
               bgcolor={"purple"}
-              width={"40%"}
+              width={{ xs: "100%", sm: "100%", md: "40%" }}
             >
               <Button type="submit" variant="contained" sx={{ width: "100%" }}>
                 Crear cuenta

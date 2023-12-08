@@ -12,7 +12,12 @@ export const FilesUpload = () => {
 
   return (
     <Box display={"flex"} justifyContent={"left"} sx={{ width: "100%" }}>
-      <Box display={"flex"} flexDirection={"column"} sx={{ m: 8, gap: 4 }}>
+      <Box
+        display={"flex"}
+        flexDirection={"column"}
+        sx={{ m: 8, gap: 4 }}
+        py={8}
+      >
         <Typography variant="h1">Sube tus documentos</Typography>
         <Typography variant="h2" sx={{ mt: 2 }}>
           Ingresa los siguientes datos para poder pagar tus cuentas

@@ -1,7 +1,8 @@
 import Head from "next/head";
 import React, { FC, PropsWithChildren } from "react";
 import { Box, IconButton, SxProps } from "@mui/material";
-import { TopBar } from "../UI/TopBar";
+import { Footer, TopBar } from "../UI";
+import { useRouter } from "next/router";
 // import Footer from "../UI/Footer";
 
 interface Props {
@@ -14,6 +15,7 @@ export const MainLayout: FC<PropsWithChildren<Props>> = ({
   pageDescription,
   children,
 }) => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -33,7 +35,11 @@ export const MainLayout: FC<PropsWithChildren<Props>> = ({
           bgcolor: { xs: "#37ADF7", lg: "none" },
           // width: { xs: "none", md: "100vw" },
           // height: { xs: "none", md: "100vh" },
-          height: "100vh",
+          // height: "100vh",
+          height:
+            router.pathname === "/" || router.pathname === "/login"
+              ? "100vh"
+              : null,
         }}
         component={"main"}
       >
@@ -44,9 +50,9 @@ export const MainLayout: FC<PropsWithChildren<Props>> = ({
         </Box>
         {children}
       </Box>
-      {/* <Box component={"footer"}> */}
-      {/* <Footer /> */}
-      {/* </Box> */}
+      <Box component={"footer"}>
+        <Footer />
+      </Box>
     </>
   );
 };

@@ -26,8 +26,63 @@ const cards: IDataCard[] = [
     text: "Pagar servicio",
   },
   {
-    img: "/images/thunder.png",
-    title: "Licencias de Funcionamiento",
+    img: "/images/exposicion.png",
+    title: "Exposiciones",
+    text: "Pagar servicio",
+  },
+  {
+    img: "/images/recital.png",
+    title: "Recitales",
+    text: "Pagar servicio",
+  },
+  {
+    img: "/images/permiso.png",
+    title: "Permisos",
+    text: "Conferencias",
+  },
+  {
+    img: "/images/boxlucha.png",
+    title: "Box y Lucha libre",
+    text: "Pagar servicio",
+  },
+  {
+    img: "/images/futbol.png",
+    title: "Fútbol",
+    text: "Pagar servicio",
+  },
+  {
+    img: "/images/feria.png",
+    title: "Ferias",
+    text: "Pagar servicio",
+  },
+  {
+    img: "/images/desfile.png",
+    title: "Desfiles",
+    text: "Conferencias",
+  },
+  {
+    img: "/images/fiesta.png",
+    title: "Fiesta Patronal",
+    text: "Pagar servicio",
+  },
+  {
+    img: "/images/disco.png",
+    title: "Tardeada, disco",
+    text: "Pagar servicio",
+  },
+  {
+    img: "/images/baile.png",
+    title: "Bailes públicos",
+    text: "Pagar servicio",
+  },
+  {
+    img: "/images/juegomecanico.png",
+    title: "Juego mecánicos",
+    text: "Conferencias",
+  },
+  {
+    img: "/images/concierto.png",
+    title: "Conciertos",
     text: "Pagar servicio",
   },
 ];

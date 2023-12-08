@@ -323,7 +323,7 @@ const DataPage = () => {
                   <Box>
                     <TextField
                       sx={{
-                        width: "75%",
+                        width: "100%",
                         borderRadius: 2,
                         backgroundColor: "#0000000F",
                       }}
@@ -378,7 +378,7 @@ const DataPage = () => {
               mt: 4,
             }}
             bgcolor={"purple"}
-            width={"15%"}
+            width={{ xs: "50%", sm: "50%", md: "15%" }}
           >
             <Button
               variant="contained"

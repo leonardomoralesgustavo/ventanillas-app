@@ -34,7 +34,7 @@ const DataPage = () => {
     console.log("Datos del formulario:", formData);
 
     // Muestra los datos en un alert
-    alert("Datos guardados: " + JSON.stringify(formData));
+    // alert("Datos guardados: " + JSON.stringify(formData));
     // Open the modal after showing the alert
     setIsModalOpen(true);
   };

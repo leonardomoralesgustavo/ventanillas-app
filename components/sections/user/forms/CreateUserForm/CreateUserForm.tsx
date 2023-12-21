@@ -24,7 +24,7 @@ export const CreateUserForm = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    alert(JSON.stringify(formData, null, 2));
+    // alert(JSON.stringify(formData, null, 2));
     console.log(formData);
     router.push("/login");
   };

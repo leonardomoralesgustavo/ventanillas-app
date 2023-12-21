@@ -9,7 +9,7 @@ export const LoginUserForm = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    alert(`Nombre: ${name}\nContraseña: ${password}`);
+    // alert(`Nombre: ${name}\nContraseña: ${password}`);
     router.push("/filesUpload");
     const userData = {
       name,

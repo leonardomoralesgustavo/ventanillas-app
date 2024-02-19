@@ -31,15 +31,15 @@ export const MainLayout: FC<PropsWithChildren<Props>> = ({
       </Box> */}
       <Box
         sx={{
-          // backgroundImage: { xs: "none", md: "url(/images/Grupo78.png)" },
+          // backgroundImage: { xs: "none", md: "url(/images/Grupo78.png)" },  
           bgcolor: { xs: "#37ADF7", lg: "none" },
           // width: { xs: "none", md: "100vw" },
           // height: { xs: "none", md: "100vh" },
-          // height: "100vh",
-          height:
-            router.pathname === "/" || router.pathname === "/login"
-              ? "100vh"
-              : null,
+          height: "100vh",
+          // height:
+          //   router.pathname === "/" || router.pathname === "/login"
+          //     ? "100vh"
+          //     : null,
         }}
         component={"main"}
       >

@@ -11,78 +11,33 @@ interface IDataCard {
 
 const cards: IDataCard[] = [
   {
-    img: "/images/house.png",
-    title: "Predial",
+    img: "/images/impuesto.png",
+    title: "Impuestos",
     text: "Pagar servicio",
   },
   {
-    img: "/images/car.png",
-    title: "Tenencia Vehicular",
+    img: "/images/derecho.png",
+    title: "Derechos",
     text: "Pagar servicio",
   },
   {
-    img: "/images/profile.png",
-    title: "Licencias de Funcionamiento",
+    img: "/images/producto.png",
+    title: "Productos",
     text: "Pagar servicio",
   },
   {
-    img: "/images/exposicion.png",
-    title: "Exposiciones",
+    img: "/images/aprovechamiento.png",
+    title: "Aprovechamientos",
     text: "Pagar servicio",
   },
   {
-    img: "/images/recital.png",
-    title: "Recitales",
+    img: "/images/participacion.png",
+    title: "Participaciones y Aportaciones",
     text: "Pagar servicio",
   },
   {
-    img: "/images/permiso.png",
-    title: "Permisos",
-    text: "Pagar servicio",
-  },
-  {
-    img: "/images/boxlucha.png",
-    title: "Box y Lucha libre",
-    text: "Pagar servicio",
-  },
-  {
-    img: "/images/futbol.png",
-    title: "Fútbol",
-    text: "Pagar servicio",
-  },
-  {
-    img: "/images/feria.png",
-    title: "Ferias",
-    text: "Pagar servicio",
-  },
-  {
-    img: "/images/desfile.png",
-    title: "Desfiles",
-    text: "Pagar servicio",
-  },
-  {
-    img: "/images/fiesta.png",
-    title: "Fiesta Patronal",
-    text: "Pagar servicio",
-  },
-  {
-    img: "/images/disco.png",
-    title: "Tardeada, disco",
-    text: "Pagar servicio",
-  },
-  {
-    img: "/images/baile.png",
-    title: "Bailes públicos",
-    text: "Pagar servicio",
-  },
-  {
-    img: "/images/juegomecanico.png",
-    title: "Juegos mecánicos",
-    text: "Pagar servicio",
-  },
-  {
-    img: "/images/concierto.png",
-    title: "Conciertos",
+    img: "/images/ingresos.png",
+    title: "Ingresos Extraordinarios",
     text: "Pagar servicio",
   },
 ];
@@ -97,8 +52,7 @@ export const HomeDigitalServices = () => {
       alignItems={"center"}
       sx={{ flexWrap: "wrap" }}
       // gap={4}
-
-      // mt={30}
+      mt={5}
     >
       {cards.map(({ img, title, text }) => (
         <>
@@ -112,7 +66,7 @@ export const HomeDigitalServices = () => {
               bgcolor: "white",
               minWidth: "300px",
               m: 2,
-              p: 4,
+              p: 5,
               borderRadius: 2,
             }}
           >

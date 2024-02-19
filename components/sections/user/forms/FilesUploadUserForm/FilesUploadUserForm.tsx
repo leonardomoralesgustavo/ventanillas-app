@@ -16,7 +16,7 @@ export const FilesUpload = () => {
         display={"flex"}
         flexDirection={"column"}
         sx={{ m: 8, gap: 4 }}
-        py={8}
+        // py={8}
       >
         <Typography variant="h1">Sube tus documentos</Typography>
         <Typography variant="h2" sx={{ mt: 2 }}>

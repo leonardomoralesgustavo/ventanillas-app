@@ -13,8 +13,8 @@ export const usePathInfo = () => {
     switch (pathname) {
       case "/":
         return {
-          title: "Rifame - Inicio",
-          description: "Rifame",
+          title: "Ventanillas - Inicio",
+          description: "Ventanillas",
         };
       default:
         return { title: "", description: "" };

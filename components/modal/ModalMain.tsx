@@ -18,22 +18,49 @@ const ModalMain: FC<ModalProps> = ({ open, onClose, service, subServices }) => {
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
     >
-      <Box sx={style}>
-        <Typography color={"black"}>{service}</Typography>
+      <Box
+        display={"flex"}
+        flexDirection={"column"}
+        // alignItems={"center"}
+        gap={2}
+        sx={style}
+      >
+        <Typography variant="body2" color={"black"}>
+          {service}
+        </Typography>
         {/* {subServices.map((item) => (
           <Typography color={"black"}>{item.name}</Typography>
         ))} */}
-       {subServices && subServices.length > 0 && subServices.map(category => (
-        <div key={category.name}>
-          <Typography color={"black"} variant="h6" gutterBottom>{category.name}</Typography>
-          {category.services.map(service => (
-            <div key={service.name}>
-              <Typography variant="subtitle1" gutterBottom>{service.name}</Typography>
-              <Typography variant="body1">{service.text}</Typography>
-            </div>
+        {subServices &&
+          subServices.length > 0 &&
+          subServices.map((category) => (
+            <Box key={category.name}>
+              <Typography color={"black"} variant="h6" gutterBottom>
+                {category.name}
+              </Typography>
+              {category.services?.map((service) => (
+                <Box
+                  key={service.name}
+                  bgcolor={"#186196"}
+                  sx={{
+                    mb: 2,
+                    p: 2,
+                    borderRadius: "10px",
+                    cursor: "pointer",
+                    ":hover": {
+                      bgcolor: "#37ADF7",
+                      color: "white",
+                      transition: "all 0.2s ease",
+                    },
+                  }}
+                >
+                  <Typography variant="body1" color={"white"}>
+                    {service.text}
+                  </Typography>
+                </Box>
+              ))}
+            </Box>
           ))}
-        </div>
-      ))}
       </Box>
     </Modal>
   );
@@ -51,4 +78,6 @@ const style = {
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
+  overflowY: "auto",
+  maxHeight: "85vh",
 };

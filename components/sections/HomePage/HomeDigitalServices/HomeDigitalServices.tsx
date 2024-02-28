@@ -265,6 +265,7 @@ export const HomeDigitalServices = () => {
   const [selectedService, setSelectedService] = useState<string>("");
   const [dataSubServices, setDataSubServices] = useState<ISubServices[]>();
   const handleOpen = () => setShowMainModal(true);
+  const handleClose = () => setShowMainModal(false);
 
   return (
     <Box
@@ -328,7 +329,7 @@ export const HomeDigitalServices = () => {
       ))}
       <ModalMain
         open={showMainModal}
-        onClose={() => {}}
+        onClose={handleClose}
         service={selectedService}
         subServices={dataSubServices!}
       />
